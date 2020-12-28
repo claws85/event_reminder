@@ -68,7 +68,7 @@ def future_date(date_today, day_delta):
     """Returns future isoformat date (date today + day_delta)
     in string form"""
     fut_date = date_today + datetime.timedelta(days=day_delta)
-    return fut_date.isoformat()
+    return fut_date.strftime('%d - %m')
 
 
 if __name__ == '__main__':
